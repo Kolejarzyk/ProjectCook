@@ -2,4 +2,9 @@
     <string name="app_name">Cook</string>
     <string name="sign_in">Sign In</string>
     <string name="Register">Register</string>
+    <string name="login">Login</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="cook_name">Name</string>
 </resources>
