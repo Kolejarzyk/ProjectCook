@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".RegisterPage">
+
+    <Button
+            android:text="@string/Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_button_register"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="29dp"
+            app:layout_constraintTop_toBottomOf="@+id/password_field_register"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/cook_name_field_register"
+            android:hint="@string/cook_name" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="106dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/email_field_register"
+            android:inputType="textEmailAddress" android:hint="@string/email"
+            app:layout_constraintStart_toStartOf="@+id/cook_name_field_register" android:layout_marginTop="27dp"
+            app:layout_constraintTop_toBottomOf="@+id/cook_name_field_register"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/password_field_register"
+            android:hint="@string/password" app:layout_constraintStart_toStartOf="@+id/email_field_register"
+            android:layout_marginTop="25dp" app:layout_constraintTop_toBottomOf="@+id/email_field_register"/>
+</android.support.constraint.ConstraintLayout>
