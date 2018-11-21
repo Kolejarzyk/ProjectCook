@@ -7,4 +7,9 @@
     <string name="password">password</string>
     <string name="title_activity_login">Sign in</string>
     <string name="cook_name">Name</string>
+    <string name="create_recipe">Create Recipe +</string>
+    <string name="my_builds">My Builds</string>
+    <string name="favourites">Favourites</string>
+    <string name="ranking">Ranking</string>
+    <string name="products_list">Products List</string>
 </resources>
