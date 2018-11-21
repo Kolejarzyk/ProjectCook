@@ -3,13 +3,13 @@ package com.example.kolejarz.cook
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_sidepanel_page.*
+import kotlinx.android.synthetic.main.activity_sidepanel.*
 
 class SidePanelPage : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sidepanel_page)
+        setContentView(R.layout.activity_sidepanel)
 
 
         create_recipe_button_side_panel.setOnClickListener{
