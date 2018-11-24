@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FF909090">
+
+        <TextView
+                android:text="New"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/textNew"
+                android:textSize="30sp"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="4dp"/>
+        <android.support.v7.widget.CardView android:layout_width="120dp"
+                                            android:layout_height="120dp"
+                                            android:layout_below="@id/textNew"
+                                            app:cardElevation="8dp"
+                                            app:cardPreventCornerOverlap="false"
+                                            app:cardUseCompatPadding="true"
+                                            android:id="@+id/cardNew"
+        >
+        </android.support.v7.widget.CardView>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Popular"
+                  android:textSize="30sp"
+                  android:layout_below="@id/cardNew"
+                  android:id="@+id/textPopular"/>
+        <android.support.v7.widget.CardView android:layout_width="120dp"
+                                            android:layout_height="120dp"
+                                            android:layout_below="@id/textPopular"
+                                            app:cardElevation="8dp"
+                                            app:cardPreventCornerOverlap="false"
+                                            app:cardUseCompatPadding="true"
+                                            android:id="@+id/cardPopular">
+        </android.support.v7.widget.CardView>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="For you"
+                  android:textSize="30sp"
+                  android:layout_below="@id/cardPopular"
+                  android:id="@+id/textForYou"
+                  />
+        <android.support.v7.widget.CardView android:layout_width="120dp"
+                                            android:layout_height="120dp"
+
+                                            app:cardElevation="8dp"
+                                            app:cardPreventCornerOverlap="false"
+                                            app:cardUseCompatPadding="true"
+                                                android:layout_below="@id/textForYou"
+                                            android:id="@+id/cardForYou">
+        </android.support.v7.widget.CardView>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Last Seen"
+                  android:textSize="30sp"
+                  android:layout_below="@id/cardForYou"
+                  android:id="@+id/textLastSeen"
+
+        />
+        <android.support.v7.widget.CardView android:layout_width="120dp"
+                                            android:layout_height="120dp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentBottom="true"
+                                            app:cardElevation="8dp"
+                                            app:cardPreventCornerOverlap="false"
+                                            app:cardUseCompatPadding="true"
+                                            android:layout_below="@id/textLastSeen">
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
