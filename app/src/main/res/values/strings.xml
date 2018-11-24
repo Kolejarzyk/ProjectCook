@@ -14,4 +14,24 @@
     <string name="ranking">Ranking</string>
     <string name="products_list">Products List</string>
 
+    <string name="vegetables">Vegetables</string>
+    <string name="fruits">Fruits</string>
+    <string name="spices">Spices</string>
+    <string name="calories">Cal</string>
+    <string name="nutrition">Nutrition</string>
+    <string name="allergic">Allergy</string>
+    <string name="item1">Tomato</string>
+    <string name="item2">Paprika</string>
+    <string name="item3">Cucumber</string>
+    <string name="item4">Orange</string>
+    <string name="item5">Apple</string>
+    <string name="item6">Pineapple</string>
+    <string name="item7">Salt</string>
+    <string name="item8">Pepper</string>
+    <string name="item9">Cinnamon</string>
+    <string name="stat1">1000</string>
+    <string name="stat2">B6</string>
+    <string name="stat3">No</string>
+
+    <string name="search">Which ingredient are you looking for?</string>
 </resources>
