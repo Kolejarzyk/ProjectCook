@@ -34,4 +34,14 @@
     <string name="stat3">No</string>
 
     <string name="search">Which ingredient are you looking for?</string>
+    <string name="recipe_name">Recipe name</string>
+    <string name="recipe_short_description">Recipe description</string>
+    <string name="owner">BR</string>
+    <string name="date">10.10.2010</string>
+    <string name="number_of_comments">10</string>
+    <string name="number_of_views">289</string>
+    <string name="favourites_times">4</string>
+    <string name="calories_full_name"> <u>Calories</u> </string>
+    <string name="nutrition_full_name"> <u>Nutrition</u> </string>
+    <string name="allergic_full_name"> <u>Allergic</u> </string>
 </resources>
