@@ -42,4 +42,8 @@
     <string name="number_of_comments">10</string>
     <string name="number_of_views">289</string>
     <string name="favourites_times">4</string>
+
+    <string name="calories_full_name"> <u>Calories</u> </string>
+    <string name="nutrition_full_name"> <u>Nutrition</u> </string>
+    <string name="allergic_full_name"> <u>Allergic</u> </string>
 </resources>

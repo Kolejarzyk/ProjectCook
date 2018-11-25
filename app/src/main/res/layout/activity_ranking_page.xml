@@ -56,7 +56,7 @@
                 app:columnCount="3"
                 app:useDefaultMargins="false"
                 android:layout_width="match_parent"
-                android:layout_height="154dp">
+                android:layout_height="0dp">
 
             <android.support.v7.widget.CardView>
                 <RelativeLayout android:layout_width="match_parent"
