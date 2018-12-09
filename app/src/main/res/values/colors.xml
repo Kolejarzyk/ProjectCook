@@ -5,4 +5,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="scrim">#88000000</color>
     <color name="basicBackground">#FFFFFF</color>
+    <color name="buttonLabel">#d3d3d3</color>
 </resources>

@@ -44,4 +44,8 @@
     <string name="calories_full_name"> <u>Calories</u> </string>
     <string name="nutrition_full_name"> <u>Nutrition</u> </string>
     <string name="allergic_full_name"> <u>Allergic</u> </string>
+
+    <string name="hint_item">Product&#8230;</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Product not saved because it is empty.</string>
 </resources>

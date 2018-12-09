@@ -16,7 +16,7 @@ class ProductsViewModel(application: Application) : AndroidViewModel(application
     val allProducts: LiveData<List<Products>>
 
     init {
-        val productsDAO = ProductsRoomDatabase.getDatabase(application).ProductsDAO()
+        val productsDAO = ProductsRoomDatabase.getDatabase(application, scope).productsDAO()
         repository = ProductsRepository(productsDAO)
         allProducts = repository.allProducts
     }
