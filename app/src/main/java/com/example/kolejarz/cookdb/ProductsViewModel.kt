@@ -3,30 +3,36 @@ package com.example.kolejarz.cookdb
 import android.app.Application
 import android.arch.lifecycle.AndroidViewModel
 import android.arch.lifecycle.LiveData
+import kotlinx.coroutines.*
 import kotlin.coroutines.CoroutineContext
 
-class ProductsViewModel(application: Application) : AndroidViewModel(application) {
+class ProductViewModel(application: Application) : AndroidViewModel(application) {
 
-    private var parentJob = Job()
-    private val coroutineContext: CoroutineContext
-        get() = parentJob + Dispatchers.Main
-    private val scope = CoroutineScope(coroutineContext)
-
-    private val repository: ProductsRepository
-    val allProducts: LiveData<List<Products>>
+    private val repository: ProductRepository
+    private val scope = CoroutineScope(couroutineContext)
+    val allProducts: LiveData<List<Product>>
 
     init {
-        val productsDAO = ProductsRoomDatabase.getDatabase(application, scope).productsDAO()
-        repository = ProductsRepository(productsDAO)
-        allProducts = repository.allProducts
+        val productsDao = ProductRoomDatabase.getDatabase(application,scope).productDao()
+        repository = ProductRepository(productsDao)
+        allProducts = repository.allProduct
     }
 
-    fun insert(products: Products) = scope.launch(Dispatchers.IO) {
-        repository.insert(products)
-    }
+    private var parentJob = Job()
+
+    private val couroutineContext: CoroutineContext
+    get() = parentJob + Dispatchers.Main
+
+
 
     override fun onCleared() {
         super.onCleared()
         parentJob.cancel()
     }
+
+    fun insert(product: Product) = scope.launch(Dispatchers.IO) {
+        repository.insert(product)
+    }
+
+
 }

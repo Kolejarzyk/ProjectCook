@@ -8,7 +8,7 @@ import android.text.TextUtils
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.example.kolejarz.cook.dbTest.Companion.newProductsActivityRequestCode
+import com.example.kolejarz.cook.DBTest.Companion.newProductsActivityRequestCode
 import com.example.kolejarz.cookdb.Products
 
 class DbTestActivityTest: AppCompatActivity() {
