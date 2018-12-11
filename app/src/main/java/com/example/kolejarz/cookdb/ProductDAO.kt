@@ -9,10 +9,10 @@ import android.arch.persistence.room.Query
 interface ProductDAO {
 
     @Query("SELECT * from product_table ORDER BY Name ASC")
-    fun getAllProducts(): LiveData<List<Products>>
+    fun getAllProducts(): LiveData<List<Product>>
 
     @Insert
-    fun insert(products: Products)
+    fun insert(product: Product)
 
     @Query("DELETE FROM product_table")
     fun deleteAll()
