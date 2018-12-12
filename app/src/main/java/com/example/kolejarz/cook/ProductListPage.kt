@@ -7,6 +7,6 @@ class ProductListPage : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_productslist_page)
+        setContentView(R.layout.activity_productlist_page)
     }
 }
