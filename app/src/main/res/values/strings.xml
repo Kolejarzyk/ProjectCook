@@ -44,4 +44,7 @@
     <string name="calories_full_name"> <u>Calories</u> </string>
     <string name="nutrition_full_name"> <u>Nutrition</u> </string>
     <string name="allergic_full_name"> <u>Allergic</u> </string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
 </resources>
