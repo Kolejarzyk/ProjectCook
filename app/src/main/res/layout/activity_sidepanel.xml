@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                              xmlns:tools="http://schemas.android.com/tools"
+                                             android:id="@+id/drawer_layout"
                                              android:layout_width="match_parent"
                                              android:layout_height="match_parent"
                                              xmlns:app="http://schemas.android.com/apk/res-auto"
                                              android:background="@drawable/scrim">  <!-- trying to get "shadowy" (scrim) background when nav menu is active -->
 
-    <LinearLayout
+    <!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
+    <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+    </FrameLayout>
+
+
+    <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
+    <android.support.design.widget.NavigationView
             android:orientation="vertical"
+            android:id="@+id/nav_view"
+            android:fitsSystemWindows="true"
             android:background="@color/basicBackground"
             android:layout_width="180dp"
             android:layout_height="match_parent"
@@ -15,8 +33,9 @@
             tools:context=".SidePanelPage"
             tools:layout_editor_absoluteX="0dp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"> <!-- android:background << reminder -->
-        <Button
+            app:layout_constraintStart_toStartOf="parent" /> <!-- android:background << reminder -->
+
+       <!-- <Button
                 android:text="@string/create_recipe"
                 android:layout_width="160dp"
                 android:layout_height="50dp"
@@ -66,6 +85,5 @@
                 android:layout_marginStart="6dp"
                 app:layout_constraintStart_toStartOf="@+id/ranking_button_side_panel"
                 app:layout_constraintEnd_toEndOf="@+id/ranking_button_side_panel"
-                app:layout_constraintTop_toBottomOf="@+id/ranking_button_side_panel"/>
-    </LinearLayout>
-</android.support.constraint.ConstraintLayout>
+                app:layout_constraintTop_toBottomOf="@+id/ranking_button_side_panel"/> -->
+</android.support.v4.widget.DrawerLayout>
