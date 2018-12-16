@@ -29,13 +29,13 @@
                 android:layout_height="wrap_content"
                 android:inputType="text|textNoSuggestions|textPassword"
                 android:ems="10"
-                android:id="@+id/nameRecipe" android:hint="Name of Recipe" android:textAlignment="center"/>
+                android:id="@+id/nameRecipe" android:hint="@string/recipe_name" android:textAlignment="center"/>
 
         <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="text|textNoSuggestions|textPassword"
-                android:hint="Category"
+                android:hint="@string/category"
                 android:ems="10"
                 android:id="@+id/input1"
                 android:layout_below="@id/nameRecipe"/>
@@ -51,7 +51,7 @@
         </android.support.v7.widget.CardView>
 
         <Button
-                android:text="Add Recipe"
+                android:text="@string/add_recipe"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"

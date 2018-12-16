@@ -13,13 +13,13 @@
                 android:id="@+id/imageView"/>
 
         <TextView android:layout_width="match_parent"
-                  android:text="Product Name"
+                  android:text="@string/product_name"
                   android:textSize="30sp"
                   android:layout_height="wrap_content" android:layout_toEndOf="@+id/imageView" android:layout_alignTop="@+id/imageView"
                   android:layout_marginTop="-1dp"/>
 
         <TextView android:layout_width="wrap_content"
-                  android:text="Full name FULL NAME full name"
+                  android:text="@string/full_product_name"
                   android:textSize="20sp"
                   android:layout_marginStart="10dp"
                   android:layout_below="@+id/imageView"
@@ -28,7 +28,7 @@
 
         <TextView android:layout_width="wrap_content"
                   android:textSize="15sp"
-                  android:text="opis opis opis opis opis opis opis opis opis opis opis opis opis opis opis opis opis opis opis opis opis opis opis opis "
+                  android:text="@string/product_description"
                   android:layout_below="@+id/full_name"
                   android:id="@+id/description"
                   android:layout_margin="5dp"
@@ -64,7 +64,7 @@
                   android:layout_height="wrap_content"/>
 
         <TextView android:layout_width="wrap_content"
-                  android:text="1000"
+                  android:text="@string/calories"
                   android:id="@+id/cal_number"
                   android:textAlignment="center"
                   android:layout_marginTop="5dp"
@@ -75,7 +75,7 @@
                   android:layout_marginEnd="11dp" android:layout_alignEnd="@+id/calories"/>
 
         <TextView android:layout_width="56dp"
-                  android:text="A, K"
+                  android:text="@string/nutrition"
                   android:textSize="17sp"
                   android:layout_below="@+id/calories"
                   android:textAlignment="center"
@@ -84,7 +84,7 @@
                   android:layout_marginStart="5dp" android:layout_marginTop="4dp"/>
 
         <TextView android:layout_width="56dp"
-                  android:text="Yes"
+                  android:text="@string/allergic"
                   android:textSize="17sp"
                   android:layout_below="@+id/calories"
                   android:textAlignment="center"

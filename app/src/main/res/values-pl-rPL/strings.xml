@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login">Zaloguj się</string>
+    <string name="password">hasło</string>
+    <string name="title_activity_login">Zarejestruj się</string>
+    <string name="cook_name">Imię</string>
+    <string name="create_recipe">Stwórz Przepis +</string>
+    <string name="my_builds">Moje Recepty</string>
+    <string name="favourites">Ulubione</string>
+    <string name="products_list">Lista Produktów</string>
+    <string name="vegetables">Warzywa</string>
+    <string name="fruits">Owoce</string>
+    <string name="spices">Przyprawy</string>
+    <string name="nutrition">Wartości odżywcze</string>
+    <string name="allergic">Alergie</string>
+    <string name="item1">Pomidor</string>
+    <string name="item2">Papryka</string>
+    <string name="item3">Ogórek</string>
+    <string name="item4">Pomarańcza</string>
+    <string name="item5">Jabłko</string>
+    <string name="item6">Ananas</string>
+    <string name="item7">Sól</string>
+    <string name="item8">Pieprz</string>
+    <string name="item9">Cynamon</string>
+    <string name="stat3">Nie</string>
+    <string name="search">Jakiego składnika szukasz?</string>
+    <string name="recipe_name">Nazwa przepisu</string>
+    <string name="recipe_short_description">Opis przepisu</string>
+    <string name="calories_full_name">" <u>Kalorie</u> "
+    </string>
+    <string name="nutrition_full_name">" <u>Wartości odżywcze</u> "
+    </string>
+    <string name="drawer_open">Otwórz</string>
+    <string name="drawer_close">Zamknij</string>
+    <string name="allergic_full_name">
+        <u>Alergie</u>
+    </string>
+    <string name="sign_in">Zarejestruj się</string>
+    <string name="product_name">Nazwa Produktu</string>
+    <string name="full_product_name">Pełna Nazwa Produktu</string>
+    <string name="product_description">Opis</string>
+    <string name="category">Kategoria</string>
+    <string name="add_recipe">Dodaj Przepis</string>
+    <string name="background_name">Witaj szuflado!</string>
+    <string name="drawer_header">Nagłówek Szuflady</string>
+    <string name="page_new">Nowe</string>
+    <string name="popular">Popularne</string>
+    <string name="for_you">Dla Ciebie</string>
+    <string name="last_seen">Ostatnio Widziane</string>
+    <string name="creator">"Stworzone przez: "</string>
+    <string name="name">"Nazwa: "</string>
+    <string name="page_date">"Data: "</string>
+    <string name="category1">Kategoria1</string>
+    <string name="category2">Kategoria2</string>
+    <string name="category3">Kategoria3</string>
+    <string name="Register">Zarejestruj</string>
+</resources>

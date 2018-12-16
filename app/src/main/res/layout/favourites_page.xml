@@ -30,7 +30,7 @@
                 android:inputType="text"
                 android:ems="10"
                 android:layout_gravity="end"
-                android:text="Creator:"
+                android:text="@string/creator"
                 android:layout_marginTop="50dp"
                 android:id="@+id/editText3"/>
         <EditText
@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="text"
                 android:layout_gravity="end"
-                android:text="Name:"
+                android:text="@string/name"
                 android:ems="10"
                 android:id="@+id/editText"
                 />
@@ -48,25 +48,25 @@
                 android:inputType="date"
                 android:layout_gravity="end"
                 android:layout_marginTop="100dp"
-                android:text="Date:"
+                android:text="@string/page_date"
                 android:ems="10"
                 android:id="@+id/editText2"/>
         <TextView
-                android:text="Category1"
+                android:text="@string/category1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView10"
                 android:layout_marginTop="100dp"
                 android:layout_marginStart="24dp"/>
         <TextView
-                android:text="Category2"
+                android:text="@string/category2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView11"
                 android:layout_marginTop="120dp"
                 android:layout_marginStart="24dp"/>
         <TextView
-                android:text="Category3"
+                android:text="@string/category3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView13"
