@@ -1,4 +1,4 @@
-package com.example.kolejarz.cook
+package com.example.kolejarz.model
 
 import java.util.*
 
