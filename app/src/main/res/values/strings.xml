@@ -15,9 +15,9 @@
     <string name="vegetables">Vegetables</string>
     <string name="fruits">Fruits</string>
     <string name="spices">Spices</string>
-    <string name="calories" translatable="false">Cal</string>
-    <string name="nutrition">Nutrition</string>
-    <string name="allergic">Allergy</string>
+    <string name="calories" translatable="false">1000</string>
+    <string name="nutrition">D3</string>
+    <string name="allergic">No</string>
     <string name="item1">Tomato</string>
     <string name="item2">Paprika</string>
     <string name="item3">Cucumber</string>
@@ -70,4 +70,5 @@
     <string name="nutrition_full_name">
         <u>Nutrients</u>
     </string>
+    <string name="my_recipes">My Recipes</string>
 </resources>
