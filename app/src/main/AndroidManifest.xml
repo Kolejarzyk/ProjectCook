@@ -25,6 +25,8 @@
         <activity android:name=".RegisterPage"></activity>
         <activity android:name=".UserPage"></activity>
         <activity android:name=".FavouritePage"></activity>
+        <activity android:name=".ProductPage"></activity>
+        <activity android:name=".RankingPage"></activity>
     </application>
 
 </manifest>

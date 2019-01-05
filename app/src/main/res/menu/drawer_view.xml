@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <group android:checkableBehavior="single">
         <item
                 android:id="@+id/create_recipe_button_side_panel"
                 android:title="@string/create_recipe" />
@@ -15,4 +17,5 @@
         <item
                 android:id="@+id/products_list_button_side_panel"
                 android:title="@string/products_list" />
+        </group>
 </menu>
