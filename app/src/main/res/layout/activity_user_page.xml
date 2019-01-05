@@ -24,6 +24,13 @@
                 android:layout_height="wrap_content" />
 
         <!-- The main content view where fragments are loaded -->
+        <TextView
+                android:text="@string/my_recipes"
+                android:textSize="27sp"
+                android:padding="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
         <FrameLayout
                 android:id="@+id/flContent"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -38,6 +45,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
         >
+
             <RelativeLayout android:layout_width="match_parent"
                             android:padding="5dp"
                             android:layout_margin="6dp"
