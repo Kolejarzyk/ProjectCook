@@ -27,6 +27,7 @@
         <activity android:name=".FavouritePage"></activity>
         <activity android:name=".ProductPage"></activity>
         <activity android:name=".RankingPage"></activity>
+        <activity android:name=".ProductListPage"></activity>
     </application>
 
 </manifest>
