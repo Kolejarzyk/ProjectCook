@@ -13,6 +13,11 @@ class FavouriteRecipeFragment : Fragment()
         fun newInstance() = FavouriteRecipeFragment()
     }
 
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+
+    }
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.favourite_recipe_fragment,container,false)
     }
