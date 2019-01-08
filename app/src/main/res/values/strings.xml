@@ -71,4 +71,13 @@
         <u>Nutrients</u>
     </string>
     <string name="my_recipes">My Recipes</string>
+
+    <string name="category_prompt">Choose a category</string>
+    <string name="submit">Submit</string>
+
+    <string-array name="category_arrays">
+        <item>Vegetables</item>
+        <item>Fruits</item>
+        <item>Spices</item>
+    </string-array>
 </resources>
