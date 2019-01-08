@@ -55,4 +55,13 @@
     <string name="category3">Kategoria3</string>
     <string name="Register">Zarejestruj</string>
     <string name="my_recipes">Moje Przepisy</string>
+
+    <string name="category_prompt">Wybierz kategorię</string>
+    <string name="submit">Wybierz</string>
+
+    <string-array name="category_arrays">
+        <item>Warzywa</item>
+        <item>Owoce</item>
+        <item>Przyprawy</item>
+    </string-array>
 </resources>
