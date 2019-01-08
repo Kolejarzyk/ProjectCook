@@ -28,4 +28,9 @@ class CategoryDao
     {
         return categoryDao
     }
+
+    fun getById(id: Int) : Category
+    {
+        return categoryDao.get(id)
+    }
 }

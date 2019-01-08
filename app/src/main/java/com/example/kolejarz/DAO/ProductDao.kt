@@ -27,4 +27,9 @@ class ProductDao
     {
         return productDao
     }
+
+    fun getById(id: Int) : Product
+    {
+        return productDao.get(id)
+    }
 }

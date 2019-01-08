@@ -24,6 +24,11 @@ class RecipeDao
         recipeDao.removeAt(id)
     }
 
+    fun getRecipes(): List<Recipe>
+    {
+        return recipeDao
+    }
+
     fun getGenders(): List<Recipe>
     {
         return recipeDao
