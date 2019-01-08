@@ -12,7 +12,6 @@
                     android:padding="5dp"
                     android:layout_margin="6dp"
                     android:layout_height="match_parent"
-
                     android:background="@drawable/customborder">
 
         <TextView
