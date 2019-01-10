@@ -74,6 +74,8 @@
 
     <string name="category_prompt">Choose a category</string>
     <string name="submit">Submit</string>
+    <string name="kitchen_white_sea_salt">Kitchen white sea salt</string>
+    <string name="description_salt">Salt used for cooking</string>
 
     <string-array name="category_arrays">
         <item>Vegetables</item>

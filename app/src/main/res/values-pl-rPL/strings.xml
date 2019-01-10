@@ -58,6 +58,8 @@
 
     <string name="category_prompt">Wybierz kategorię</string>
     <string name="submit">Wybierz</string>
+    <string name="kitchen_white_sea_salt">Sól kuchenna</string>
+    <string name="description_salt">Sól do gotowania</string>
 
     <string-array name="category_arrays">
         <item>Warzywa</item>
