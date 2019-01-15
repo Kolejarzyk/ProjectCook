@@ -52,7 +52,7 @@
     <string name="product_name">Product Name</string>
     <string name="full_product_name">Full Product Name</string>
     <string name="product_description">Description</string>
-    <string name="category">Category</string>
+    <string name="product">Product</string>
     <string name="add_recipe">Add Recipe</string>
     <string name="background_name">Hello Drawer Example!</string>
     <string name="drawer_header">Drawer Header</string>
@@ -76,6 +76,8 @@
     <string name="submit">Submit</string>
     <string name="kitchen_white_sea_salt">Kitchen white sea salt</string>
     <string name="description_salt">Salt used for cooking</string>
+    <string name="delete">Delete</string>
+    <string name="like">Like!</string>
 
     <string-array name="category_arrays">
         <item>Vegetables</item>

@@ -10,9 +10,6 @@
                 android:id="@+id/my_builds_button_side_panel"
                 android:title="@string/my_builds" />
         <item
-                android:id="@+id/favourites_button_side_panel"
-                android:title="@string/favourites" />
-        <item
                 android:id="@+id/ranking_button_side_panel"
                 android:title="@string/ranking" />
         <item

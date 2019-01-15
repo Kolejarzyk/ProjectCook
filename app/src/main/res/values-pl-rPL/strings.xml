@@ -39,7 +39,7 @@
     <string name="product_name">Nazwa Produktu</string>
     <string name="full_product_name">Pełna Nazwa Produktu</string>
     <string name="product_description">Opis</string>
-    <string name="category">Kategoria</string>
+    <string name="product">Produkt</string>
     <string name="add_recipe">Dodaj Przepis</string>
     <string name="background_name">Witaj szuflado!</string>
     <string name="drawer_header">Nagłówek Szuflady</string>
@@ -60,7 +60,8 @@
     <string name="submit">Wybierz</string>
     <string name="kitchen_white_sea_salt">Sól kuchenna</string>
     <string name="description_salt">Sól do gotowania</string>
-
+    <string name="delete">Usuń</string>
+    <string name="like">Lubie!</string>
     <string-array name="category_arrays">
         <item>Warzywa</item>
         <item>Owoce</item>

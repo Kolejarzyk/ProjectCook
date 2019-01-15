@@ -23,7 +23,7 @@ class ProductDao
         productDao.removeAt(id)
     }
 
-    fun getProducts(): List<Product>
+    fun getProducts(): MutableList<Product>
     {
         return productDao
     }
@@ -31,5 +31,10 @@ class ProductDao
     fun getById(id: Int) : Product
     {
         return productDao.get(id)
+    }
+
+    fun getByProductName(name: String): Product?
+    {
+        return productDao.find { product -> product.product_name == name }
     }
 }

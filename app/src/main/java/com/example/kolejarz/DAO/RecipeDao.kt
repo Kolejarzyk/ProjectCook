@@ -24,12 +24,7 @@ class RecipeDao
         recipeDao.removeAt(id)
     }
 
-    fun getRecipes(): List<Recipe>
-    {
-        return recipeDao
-    }
-
-    fun getGenders(): List<Recipe>
+    fun getRecipes(): MutableList<Recipe>
     {
         return recipeDao
     }
