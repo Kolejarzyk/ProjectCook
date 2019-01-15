@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_margin="6dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/customborder"
+                    android:id="@+id/recipeView">
+
+        <TextView
+                android:text="@string/recipe_name"
+                app:layout_column="0"
+                app:layout_row="0"
+                android:textSize="25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/recipe_name_item"/>
+        <TextView
+                android:text="@string/recipe_short_description"
+                app:layout_column="0"
+                app:layout_row="0"
+                android:textSize="16sp"
+                android:layout_below="@+id/recipe_name_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/recipe_description_item"/>
+        <TextView
+                android:text="@string/owner"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_owner"
+                android:layout_below="@+id/recipe_description_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/owner"/>
+        <TextView
+                android:text="@string/date"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="25dp"
+                android:drawableStart="@drawable/ic_date"
+                android:layout_below="@+id/recipe_description_item"
+                android:layout_toEndOf="@+id/owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/date"/>
+        <TextView
+                android:text="@string/number_of_views"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="25dp"
+                android:drawableStart="@drawable/ic_favs"
+                android:layout_below="@id/recipe_description_item"
+                android:layout_toEndOf="@id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/favourites"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/delete_recipe"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@id/favourites"
+                android:text="@string/delete"
+                />
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/like_recipe"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@id/delete_recipe"
+                android:text="@string/like"
+        />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,7 +1,6 @@
 package com.example.kolejarz.DAO
 
 import com.example.kolejarz.model.Category
-import java.util.*
 
 class CategoryDao
 {

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_margin="6dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/customborder"
+                    android:id="@+id/recipeView">
+
+        <TextView
+                android:text="@string/product_name"
+                app:layout_column="0"
+                app:layout_row="0"
+                android:textSize="25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/product_name_item"/>
+        <TextView
+                android:text="@string/product_description"
+                app:layout_column="0"
+                app:layout_row="0"
+                android:textSize="16sp"
+                android:layout_below="@id/product_name_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/product_description_item"/>
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/button1"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/transparent"/>
+    </RelativeLayout>
+</RelativeLayout>

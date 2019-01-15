@@ -19,8 +19,8 @@ class ProductDAOTest {
     @Before
     fun Before()
     {
-        val product1 = Product(1, "papryka", "paprykaczerwona", "bardzo czerwona", 1000, "A4", "No")
-        val product2 = Product(2, "ogorek", "zielonyzwykly", "bardzo zieony", 1000, "A4", "No")
+        val product1 = Product("papryka", "paprykaczerwona", "bardzo czerwona", 1000, "A4", "No")
+        val product2 = Product("ogorek", "zielonyzwykly", "bardzo zieony", 1000, "A4", "No")
         products.insertProduct(product1)
         products.insertProduct(product2)
     }
@@ -32,7 +32,7 @@ class ProductDAOTest {
 
     @Test
     fun productDaoInsertWorking() {
-        val product = Product(3, "papryka", "paprykaczerwona", "bardzo czerwona", 1000, "A4", "No")
+        val product = Product("papryka", "paprykaczerwona", "bardzo czerwona", 1000, "A4", "No")
         products.insertProduct(product)
         assertEquals("papryka", "papryka", products.getById(2).product_name)
     }
@@ -49,6 +49,6 @@ class ProductDAOTest {
     fun productDaoDeleteWorking() {
         products.deleteProduct(0)
         assertEquals("size 1", 1, products.getProducts().size)
-        assertNotEquals("deleted 1st", 0, products.getById(0).id)
+        assertNotEquals("deleted 1st", 0, products.getById(0))
     }
 }
