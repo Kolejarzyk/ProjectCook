@@ -62,6 +62,7 @@
     <string name="description_salt">Sól do gotowania</string>
     <string name="delete">Usuń</string>
     <string name="like">Lubie!</string>
+    <string name="detail">Szczegóły</string>
     <string-array name="category_arrays">
         <item>Warzywa</item>
         <item>Owoce</item>

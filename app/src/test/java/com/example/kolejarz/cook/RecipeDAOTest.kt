@@ -13,8 +13,8 @@ class RecipeDAOTest {
     @Before
     fun Before()
     {
-        val recipe1 = Recipe(1, "przepis1", "user1", arrayListOf(1,2,3), Date(2000,1,1))
-        val recipe2 = Recipe(2, "przepis2", "user2", arrayListOf(4,5,6), Date(2001,1,1))
+        val recipe1 = Recipe(1, "przepis1", "user1", mutableListOf(), Date(2000,1,1),12)
+        val recipe2 = Recipe(2, "przepis2", "user2", mutableListOf(), Date(2001,1,1),13)
         recipes.insertRecipe(recipe1)
         recipes.insertRecipe(recipe2)
     }
@@ -26,7 +26,7 @@ class RecipeDAOTest {
 
     @Test
     fun recipeDaoInsertWorking() {
-        val recipe = Recipe(2, "przepis3", "user3", arrayListOf(7,8,9), Date(2001,1,1))
+        val recipe = Recipe(2, "przepis3", "user3", mutableListOf(), Date(2001,1,1),14)
         recipes.insertRecipe(recipe)
         Assert.assertEquals("przepis3", "przepis3", recipes.getRecipe(2).recipe_name)
     }
@@ -44,5 +44,12 @@ class RecipeDAOTest {
         recipes.deleteRecipe(0)
         Assert.assertEquals("size 1", 1, recipes.getRecipes().size)
         Assert.assertNotEquals("deleted 1st", 0, recipes.getRecipe(0).id)
+    }
+
+    @Test
+    fun recipeDaoGetByName(){
+
+        val recipe = recipes.getRecipeByName("przepis1")
+        Assert.assertEquals("przepis1","przepis1",recipe?.recipe_name)
     }
 }

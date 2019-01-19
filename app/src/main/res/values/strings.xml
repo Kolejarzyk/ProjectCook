@@ -78,6 +78,7 @@
     <string name="description_salt">Salt used for cooking</string>
     <string name="delete">Delete</string>
     <string name="like">Like!</string>
+    <string name="detail">Detail</string>
 
     <string-array name="category_arrays">
         <item>Vegetables</item>
