@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="#f3e5ab">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+                >
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="500dp"
+                        android:id="@+id/recipeBuilderView">
+
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:id="@+id/nameRecipe"
+                    android:hint="@string/recipe_name"
+                    android:textAlignment="center"
+            />
+
+            <ListView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@id/nameRecipe"
+                      android:id="@+id/product_list_recipe">
+            </ListView>
+
+            <EditText android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:hint="@string/enter_text_here"
+                      android:id="@+id/recipe_detail_description"
+                      android:layout_alignParentStart="true"
+                      android:layout_marginTop="6dp" android:layout_marginStart="0dp"
+                      android:layout_below="@+id/product_list_recipe"/>
+        </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

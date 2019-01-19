@@ -68,4 +68,6 @@
         <item>Owoce</item>
         <item>Przyprawy</item>
     </string-array>
+    <string name="edit">Edytuj</string>
+    <string name="enter_text_here">Enter text here</string>
 </resources>
