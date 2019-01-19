@@ -19,7 +19,7 @@ class ProductListPage : Fragment() {
 
         var productList : MutableList<Product> = AppDatabase.productDao.getProducts()
 
-        val adapter = ProductAdapter(this.context,productList)
+        val adapter = ProductAdapter(this.context,productList,this)
 
         view.product_list_view.adapter = adapter
 

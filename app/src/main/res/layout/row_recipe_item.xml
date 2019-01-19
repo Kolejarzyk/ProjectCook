@@ -70,5 +70,12 @@
                 android:layout_toEndOf="@id/delete_recipe"
                 android:text="@string/like"
         />
+        <Button
+                android:text="@string/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/recipe_name_item"
+                android:layout_marginStart="150dp"
+                android:id="@+id/detail_recipe"/>
     </RelativeLayout>
 </RelativeLayout>

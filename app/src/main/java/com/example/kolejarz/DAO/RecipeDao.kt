@@ -33,4 +33,9 @@ class RecipeDao
     {
         return recipeDao.get(id)
     }
+
+    fun getRecipeByName(name : String) : Recipe?
+    {
+        return recipeDao.find { recipe -> recipe.recipe_name == name }
+    }
 }

@@ -1,6 +1,7 @@
 package com.example.kolejarz.Adapter
 
 import android.content.Context
+import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +9,9 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 import com.example.kolejarz.DAO.AppDatabase
+import com.example.kolejarz.cook.ProductPage
+import com.example.kolejarz.cook.R
+import com.example.kolejarz.cook.RecipeDetailFragment
 import com.example.kolejarz.model.Recipe
 import kotlinx.android.synthetic.main.row_recipe_item.view.*
 
@@ -56,6 +60,16 @@ class RecipeAdapter(private val context: Context?,private val dataSource: Mutabl
             AppDatabase.recipeDao.updateRecipe(recipe,recipe.id-1)
             ft.detach(fragment).attach(fragment).commit()
         }
+
+        rowView.detail_recipe.setOnClickListener {
+            val recipeDetail = RecipeDetailFragment()
+            val args = Bundle()
+            args.putString("recipe_name",recipeName.text.toString())
+            recipeDetail.arguments = args
+
+            ft.add(R.id.fragmentContainer,recipeDetail).commit()
+        }
+
         return rowView
     }
 }

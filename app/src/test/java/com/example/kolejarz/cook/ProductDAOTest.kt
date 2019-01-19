@@ -25,10 +25,6 @@ class ProductDAOTest {
         products.insertProduct(product2)
     }
 
-    @Test
-    fun productIdWorking() {
-        assertEquals("id working", 1, products.getById(0).id)
-    }
 
     @Test
     fun productDaoInsertWorking() {
