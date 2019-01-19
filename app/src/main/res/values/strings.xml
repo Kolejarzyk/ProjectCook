@@ -79,6 +79,8 @@
     <string name="delete">Delete</string>
     <string name="like">Like!</string>
     <string name="detail">Detail</string>
+    <string name="edit">Edit</string>
+    <string name="enter_text_here">Enter text here</string>
 
     <string-array name="category_arrays">
         <item>Vegetables</item>
