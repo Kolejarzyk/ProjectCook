@@ -39,17 +39,6 @@
                     android:background="#FF909090"/>
         </RelativeLayout>
 
-        <!--<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
-            <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-                      android:text="(PLACE FOR ELABORATED SORT)"
-                      android:id="@+id/sort"/>
-            <View
-                    android:layout_height="2dp"
-                    android:layout_width="match_parent"
-                    android:layout_below="@+id/sort"
-                    android:background="#FF909090"/>
-        </RelativeLayout> -->
-
         <android.support.v7.widget.GridLayout
                 app:columnOrderPreserved="false"
                 android:padding="2dp"
@@ -165,7 +154,7 @@
                     <Button
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/button1"
+                            android:id="@+id/recipeButton"
                             android:layout_alignParentBottom="true"
                             android:background="@android:color/transparent"/>
                 </RelativeLayout>
