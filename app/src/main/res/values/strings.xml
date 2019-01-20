@@ -81,6 +81,10 @@
     <string name="detail">Detail</string>
     <string name="edit">Edit</string>
     <string name="enter_text_here">Enter text here</string>
+    <string name="SortByLike">SortByLike</string>
+    <string name="SortByName">Sort by Name</string>
+    <string name="search_by_name">Search By Name</string>
+    <string name="search_by_like">Search By Like</string>
 
     <string-array name="category_arrays">
         <item>Vegetables</item>

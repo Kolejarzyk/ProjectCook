@@ -4,10 +4,10 @@
                 android:layout_height="match_parent"
                 xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <RelativeLayout android:layout_width="wrap_content"
+    <RelativeLayout android:layout_width="match_parent"
                     android:padding="5dp"
                     android:layout_margin="6dp"
-                    android:layout_height="110dp"
+                    android:layout_height="130dp"
                     android:background="@drawable/customborder"
                     android:id="@+id/recipeView">
 
@@ -30,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/detail_product"
-                android:layout_alignParentBottom="true"
+                android:layout_below="@id/product_description_item"
                 android:layout_toEndOf="@id/favourites"
                 android:text="@string/detail"
         />

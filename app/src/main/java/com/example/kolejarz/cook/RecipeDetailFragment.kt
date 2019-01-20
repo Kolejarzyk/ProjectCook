@@ -36,7 +36,7 @@ class RecipeDetailFragment : Fragment()
          * sets value parameter to match actual item value parameter.
          */
         view.nameRecipe.text = currentRecipe?.recipe_name
-
+        view.recipe_detail_description.text = currentRecipe?.description
         val adapter = ProductRecipeAdapter(this.context, currentRecipe!!.product,this)
         view.product_list_recipe.adapter = adapter
 

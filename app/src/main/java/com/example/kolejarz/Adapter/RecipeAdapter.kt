@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 import com.example.kolejarz.DAO.AppDatabase
-import com.example.kolejarz.cook.ProductPage
 import com.example.kolejarz.cook.R
 import com.example.kolejarz.cook.RecipeDetailFragment
 import com.example.kolejarz.model.Recipe
