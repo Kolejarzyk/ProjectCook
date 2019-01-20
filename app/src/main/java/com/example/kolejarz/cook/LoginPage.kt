@@ -9,14 +9,19 @@ import android.util.Patterns
 import kotlinx.android.synthetic.main.activity_login_page.*
 
 
+/**
+ * Class responsible for services and funcionality of home page.
+ */
 class LoginPage : AppCompatActivity()
 {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_page)
 
-
+        /**
+         * Listener for login button.
+         * Checks if email and password are correct.
+         */
     login_button_login.setOnClickListener{
 
         if(isValidEmail(email_textField_login.text))

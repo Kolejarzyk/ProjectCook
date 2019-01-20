@@ -1,6 +1,5 @@
 package com.example.kolejarz.cook
 
-
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.view.GravityCompat
@@ -11,18 +10,28 @@ import com.example.kolejarz.cook.R.layout.activity_user_page
 import kotlinx.android.synthetic.main.activity_user_page.*
 import java.lang.ClassCastException
 
-
+/**
+ * Class responsible for services and funcionality of User page.
+ */
 class UserPage : AppCompatActivity()
 {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(activity_user_page)
+
+        /**
+         * Sets Listener for navigation drawer.
+         */
         navigation_View.setNavigationItemSelectedListener{
             selectDrawItem(it)
             true
         }
     }
 
+    /**
+     * Chooses a fragment to display.
+     * Creates a new instance of that fragment and passes it to fragment manager.
+     */
     private fun selectDrawItem(item: MenuItem)
     {
         var fragment : Fragment? = null
@@ -47,6 +56,9 @@ class UserPage : AppCompatActivity()
         drawer_layout.closeDrawer(GravityCompat.START)
     }
 
+    /**
+     * Replaces actual fragment for the one we want to display.
+     */
     private fun replaceFragment(fragment: Fragment?)
     {
         val fragmentTransaction = supportFragmentManager.beginTransaction()
