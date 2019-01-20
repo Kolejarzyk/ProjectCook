@@ -9,19 +9,30 @@ import com.example.kolejarz.model.Recipe
 import kotlinx.android.synthetic.main.activity_home_page.*
 import java.util.*
 
+/**
+ * Class responsible for services and funcionality of home page.
+ */
 class HomePage : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_page)
 
-
+        /**
+         * Listener for Sign In button.
+         * Connects with login page.
+         * Fills database.
+         */
         sing_in_button_home_page.setOnClickListener{
             val intent = Intent(this, LoginPage::class.java)
             populateDatabase()
             startActivity(intent)
         }
 
+        /**
+         * Listener for Register button.
+         * Sends to registration page.
+         */
         register_button_home_page.setOnClickListener{
             val intent = Intent(this, RegisterPage::class.java)
             startActivity(intent)
@@ -29,6 +40,9 @@ class HomePage : AppCompatActivity() {
     }
 
 
+    /**
+     * Database holding products and recipes.
+     */
     private fun populateDatabase()
     {
         val product = Product("Apple","Sweet Bee apple","An apple is a sweet, edible fruit produced by an apple tree (Malus pumila).",52,"Vitamin E, C, K","none")

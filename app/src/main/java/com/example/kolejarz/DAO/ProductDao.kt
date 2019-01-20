@@ -2,6 +2,9 @@ package com.example.kolejarz.DAO
 
 import com.example.kolejarz.model.Product
 
+/**
+ * Data Access Object of Product.
+ */
 class ProductDao
 {
     var productDao = mutableListOf<Product>()
