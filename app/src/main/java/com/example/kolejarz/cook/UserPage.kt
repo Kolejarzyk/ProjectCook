@@ -19,6 +19,10 @@ class UserPage : AppCompatActivity()
         super.onCreate(savedInstanceState)
         setContentView(activity_user_page)
 
+        val fragment : Fragment?
+        val defaultFragment = ProductListFragment::class.java
+        fragment = defaultFragment.newInstance() as Fragment
+        replaceFragment(fragment)
         /**
          * Sets Listener for navigation drawer.
          */
@@ -37,12 +41,12 @@ class UserPage : AppCompatActivity()
         var fragment : Fragment? = null
         val fragmentClass = when(item.itemId){
 
-            create_recipe_button_side_panel -> CreateRecipePage::class.java
+            create_recipe_button_side_panel -> CreateRecipeFragment::class.java
             my_builds_button_side_panel ->  FavouriteRecipeFragment::class.java
-            ranking_button_side_panel -> RankingPage::class.java
-            products_list_button_side_panel -> ProductListPage::class.java
+            ranking_button_side_panel -> RankingFragment::class.java
+            products_list_button_side_panel -> ProductListFragment::class.java
             else ->{
-                ProductListPage::class.java
+                ProductListFragment::class.java
             }
         }
         try {

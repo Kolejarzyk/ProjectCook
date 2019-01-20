@@ -17,12 +17,12 @@
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"/>
     <EditText
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:ems="10"
             android:id="@+id/email_textField_login"
             android:hint="@string/email"
-            android:layout_marginTop="147dp"
+            android:layout_marginTop="180dp"
             android:layout_marginBottom="20dp" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/password_textField_login"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"/>
@@ -38,11 +38,10 @@
               app:layout_constraintBottom_toTopOf="@+id/error_password"/>
     <EditText
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:ems="10"
             android:id="@+id/password_textField_login"
             android:hint="@string/password"
-            android:autofillHints=""
             android:inputType="textPassword"
             app:layout_constraintStart_toStartOf="@+id/error_email" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/email_textField_login" android:layout_marginBottom="268dp"/>

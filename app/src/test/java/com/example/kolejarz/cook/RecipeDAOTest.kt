@@ -13,8 +13,8 @@ class RecipeDAOTest {
     @Before
     fun Before()
     {
-        val recipe1 = Recipe(1, "przepis1", "user1", mutableListOf(), Date(2000,1,1),12)
-        val recipe2 = Recipe(2, "przepis2", "user2", mutableListOf(), Date(2001,1,1),13)
+        val recipe1 = Recipe(1, "przepis1", "user1","The best recipe ever it will awsome", mutableListOf(), Date(2000,1,1),12)
+        val recipe2 = Recipe(2, "przepis2", "user2","The best recipe ever it will awsome", mutableListOf(), Date(2001,1,1),13)
         recipes.insertRecipe(recipe1)
         recipes.insertRecipe(recipe2)
     }
@@ -26,7 +26,7 @@ class RecipeDAOTest {
 
     @Test
     fun recipeDaoInsertWorking() {
-        val recipe = Recipe(2, "przepis3", "user3", mutableListOf(), Date(2001,1,1),14)
+        val recipe = Recipe(2, "przepis3", "user3", "The best recipe ever it will awsome",mutableListOf(), Date(2001,1,1),14)
         recipes.insertRecipe(recipe)
         Assert.assertEquals("przepis3", "przepis3", recipes.getRecipe(2).recipe_name)
     }

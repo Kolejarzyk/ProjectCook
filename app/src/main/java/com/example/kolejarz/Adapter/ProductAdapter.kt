@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
-import com.example.kolejarz.cook.ProductPage
+import com.example.kolejarz.cook.ProductFragment
 import com.example.kolejarz.cook.R
 import com.example.kolejarz.cook.R.layout.*
 import com.example.kolejarz.model.Product
@@ -21,7 +21,7 @@ import kotlinx.android.synthetic.main.row_product_item.view.*
  * @property dataSource gets a Product list from correct list.
  * @property fragment pinpoints to the fragment class we will be operating with.
  */
-class ProductAdapter(private val context: Context?,private val dataSource: MutableList<Product>,private val fragment: Fragment) : BaseAdapter()
+class ProductAdapter(private val context: Context?, private val dataSource: MutableList<Product>, private val fragment: Fragment) : BaseAdapter()
 {
     /**
      * LayoutInflater is one of the Android System Services
@@ -90,7 +90,7 @@ class ProductAdapter(private val context: Context?,private val dataSource: Mutab
          * This is product's listener which fills the Container with products (items).
          */
         rowView.detail_product.setOnClickListener {
-            val productPage = ProductPage()
+            val productPage = ProductFragment()
             val args = Bundle()
             args.putString("product_name",productName.text.toString())
             productPage.arguments = args
