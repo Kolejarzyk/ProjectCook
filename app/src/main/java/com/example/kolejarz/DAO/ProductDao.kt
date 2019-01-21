@@ -33,7 +33,7 @@ class ProductDao
 
     fun getById(id: Int) : Product
     {
-        return productDao.get(id)
+        return productDao[id]
     }
 
     fun getByProductName(name: String): Product?

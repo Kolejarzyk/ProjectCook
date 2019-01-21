@@ -6,7 +6,7 @@
     <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
                 tools:layout_editor_absoluteY="0dp" tools:layout_editor_absoluteX="0dp">
 
-        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                         android:id="@+id/recipeBuilderView">
 
 
@@ -20,7 +20,7 @@
             />
 
             <ListView android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
+                      android:layout_height="400dp"
                       android:layout_below="@id/nameRecipe"
                       android:id="@+id/product_list_recipe">
             </ListView>
@@ -29,15 +29,10 @@
                       android:layout_height="wrap_content"
                       android:layout_below="@id/product_list_recipe"
                       android:id="@+id/recipe_detail_description"
+                      android:textSize="28sp"
             />
 
 
-
-            <Button android:text="@string/edit"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:layout_marginBottom="9dp"
-                    android:id="@+id/edit_recipe_button"
-                    android:layout_marginEnd="8dp" android:layout_below="@id/recipe_detail_description"/>
         </RelativeLayout>
 
 

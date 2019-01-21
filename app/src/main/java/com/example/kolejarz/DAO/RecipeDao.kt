@@ -34,7 +34,7 @@ class RecipeDao
 
     fun getRecipe(id:Int): Recipe
     {
-        return recipeDao.get(id)
+        return recipeDao[id]
     }
 
     fun getRecipeByName(name : String) : Recipe?

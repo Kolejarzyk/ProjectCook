@@ -1,5 +1,6 @@
 package com.example.kolejarz.Adapter
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -58,6 +59,7 @@ class RecipeAdapter(private val context: Context?,private val dataSource: Mutabl
      * Displays the data at the specified position in the data set.
      * @return View of items in readied layout.
      */
+    @SuppressLint("SetTextI18n")
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         /**
          *  Get view for row item
@@ -75,6 +77,7 @@ class RecipeAdapter(private val context: Context?,private val dataSource: Mutabl
         val recipeName = rowView.recipe_name_item as TextView
         val recipeDescription = rowView.recipe_description_item as TextView
         val favourite = rowView.favourites as TextView
+        val date = rowView.date as TextView
 
         /**
          * Gets item position and sets it's as the recipe' position
@@ -87,6 +90,8 @@ class RecipeAdapter(private val context: Context?,private val dataSource: Mutabl
         recipeName.text = recipe.recipe_name
         recipeDescription.text = recipe.user_name
         favourite.text = recipe.like.toString()
+        date.text = recipe.date.day.toString()+"."+recipe.date.month.toString()+"."+recipe.date.year.toString()
+
 
         /**
          * This is recipe's listener which deletes a recipe on click.

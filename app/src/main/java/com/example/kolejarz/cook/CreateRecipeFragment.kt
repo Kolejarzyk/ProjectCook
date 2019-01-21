@@ -25,14 +25,14 @@ class CreateRecipeFragment : Fragment()
      */
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view : View =  inflater.inflate(R.layout.activity_recipe_builder,null)
-
+        val date = Date(Calendar.DAY_OF_MONTH,Calendar.MONTH,Calendar.YEAR)
         /**
          * This is recipe's listener which adds a recipe on click
          * and adds it to the application's database.
          */
         view.addRecipeButton.setOnClickListener{
-            val recipe = Recipe(5,view.nameRecipe.text.toString(),"",view.create_recipe_description.text.toString(),
-                products.toMutableList(), Date(2019,1,22),0)
+            val recipe = Recipe(6,view.nameRecipe.text.toString(),"",view.create_recipe_description.text.toString(),
+                products.toMutableList(), date,0)
             AppDatabase.recipeDao.insertRecipe(recipe)
             fragmentManager?.beginTransaction()?.replace(R.id.fragmentContainer,FavouriteRecipeFragment::class.java.newInstance())?.commit()
         }
@@ -42,7 +42,7 @@ class CreateRecipeFragment : Fragment()
          * @return and shows it in the layout.
          */
         view.addProductButton.setOnClickListener{
-            products.add(AppDatabase.productDao.getByProductName(view.product_name.toString()) as Product)
+            products.add(AppDatabase.productDao.getByProductName(view.product_name.text.toString())!!)
             fragmentManager?.beginTransaction()?.detach(this)?.attach(this)?.commit()
         }
 

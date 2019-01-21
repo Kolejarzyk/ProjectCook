@@ -1,94 +1,69 @@
 package com.example.kolejarz.cook
 
 import android.support.test.espresso.Espresso.onView
-import android.support.test.espresso.action.ViewActions.click
-import android.support.test.espresso.action.ViewActions.scrollTo
+import android.support.test.espresso.ViewAction
+import android.support.test.espresso.action.ViewActions
+import android.support.test.espresso.action.ViewActions.*
 import android.support.test.espresso.assertion.ViewAssertions.matches
-import android.support.test.espresso.matcher.ViewMatchers.isDisplayed
-import android.support.test.espresso.matcher.ViewMatchers.withId
-import android.support.test.filters.LargeTest
+import android.support.test.espresso.matcher.ViewMatchers.*
+import android.support.test.rule.ActivityTestRule
 import android.support.test.runner.AndroidJUnit4
-import androidx.test.espresso.matcher.ViewMatchers.withText
+import android.support.v4.app.Fragment
+import org.junit.Before
+import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
-@LargeTest
 class ActivityButtonTest {
 
-    @Test
-    fun testingTest() {
-        onView(withText("Hello world!")).check(matches(isDisplayed()))
+    @Rule
+    @JvmField
+    val rule: ActivityTestRule<HomePage> = ActivityTestRule(HomePage::class.java)
+
+    @Before
+    fun init() {
+        rule.activity
+            .supportFragmentManager.beginTransaction()
     }
 
-    @Test
-    fun activityHomePageButtonSignIn() {
-        onView(withId(R.id.sing_in_button_home_page))
+    @Before
+    fun sign_in()
+    {
+        onView((withId(R.id.sing_in_button_home_page)))
             .perform(click())
-            .check(matches(isDisplayed()))
+    }
+
+
+    @Test
+    fun login_email_failed(){
+
+        onView((withId(R.id.login_button_login))
+        ).perform(click())
+
+        onView((withId(R.id.error_email))).check(matches(withText("Email is incorrect")))
     }
 
     @Test
-    fun activityHomePageButtonLogIn() {
-        onView(withId(R.id.register_button_home_page))
-            .perform(click())
-            .check(matches(isDisplayed()))
+    fun login_password_failed(){
+        onView((withId(R.id.email_textField_login))).perform(ViewActions.typeText("pawel.dee@gmail.com"), closeSoftKeyboard())
+        onView((withId(R.id.login_button_login))).perform(click())
+
+        onView((withId(R.id.error_password))).check(matches(withText("Password is incorrect")))
     }
 
-    @Test
-    fun activityLoginPageButtonLogin() {
-        onView(withId(R.id.login_button_login))
-            .perform(click())
-            .check(matches(isDisplayed()))
-    }
 
     @Test
-    fun activityRankingPageButtonRecipe() {
-        onView(withId(R.id.recipeButton))
-            .perform(click())
-            .check(matches(isDisplayed()))
-    }
+    fun loginSuccessful() {
 
-    @Test
-    fun activityRecipeBuilderPageButtonAddProduct() {
-        onView(withId(R.id.addProductButton))
-            .perform(scrollTo(), click())
-            .check(matches(isDisplayed()))
-    }
 
-    @Test
-    fun activityRecipeBuilderPageButtonAddRecipe() {
-        onView(withId(R.id.addProductButton))
-            .perform(scrollTo(), click())
-            .check(matches(isDisplayed()))
-    }
+        onView((withId(R.id.email_textField_login))).perform(ViewActions.typeText("pawel.dee@gmail.com"))
+        onView((withId(R.id.password_textField_login))).perform(ViewActions.typeText("cokolwiek"), closeSoftKeyboard())
+        onView((withId(R.id.login_button_login))).perform(click())
+        val defaultFragment = ProductListFragment::class.java
+        val fragment = defaultFragment.newInstance() as Fragment
 
-    @Test
-    fun activityRegisterPageButtonRegister() {
-        onView(withId(R.id.register_button_register))
-            .perform(click())
-            .check(matches(isDisplayed()))
-    }
-
-    @Test
-    fun rowProductButton1() {
-        onView(withId(R.id.button1))
-            .perform(scrollTo(), click())
-            .check(matches(isDisplayed()))
-    }
-
-    @Test
-    fun rowRecipeDelete() {
-        onView(withId(R.id.delete_recipe))
-            .perform(scrollTo(), click())
-            .check(matches(isDisplayed()))
-    }
-
-    @Test
-    fun rowRecipeLike() {
-        onView(withId(R.id.like_recipe))
-            .perform(click())
-            .check(matches(withText("@string/number_of_views"+1)))
-            //.check(matches(withText("290"))) na wypadek jakby to +1 jednak nie dzialalo
+        rule.activity.supportFragmentManager.beginTransaction().replace(R.id.fragmentContainer, fragment).commit()
+        onView((withId(R.id.textView12))).check(matches(withText(R.id.productList)))
     }
 }

@@ -11,7 +11,7 @@
                 android:title="@string/my_builds" />
         <item
                 android:id="@+id/ranking_button_side_panel"
-                android:title="@string/ranking" />
+                android:title="@string/sort" />
         <item
                 android:id="@+id/products_list_button_side_panel"
                 android:title="@string/products_list" />
