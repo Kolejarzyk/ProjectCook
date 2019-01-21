@@ -20,20 +20,13 @@
                   android:layout_height="wrap_content" android:layout_toEndOf="@id/imageView"
                   android:layout_alignTop="@id/imageView"
                   android:id="@+id/product_name"
-                  android:layout_marginTop="-1dp"/>
+                  android:layout_marginTop="40dp"/>
+
 
         <TextView android:layout_width="wrap_content"
-                  android:text="@string/kitchen_white_sea_salt"
                   android:textSize="20sp"
-                  android:layout_marginStart="10dp"
-                  android:layout_below="@id/imageView"
-                  android:id="@+id/full_name"
-                  android:layout_height="wrap_content"/>
-
-        <TextView android:layout_width="wrap_content"
-                  android:textSize="15sp"
                   android:text="@string/description_salt"
-                  android:layout_below="@id/full_name"
+                  android:layout_below="@id/imageView"
                   android:id="@+id/description"
                   android:layout_margin="5dp"
                   android:layout_height="wrap_content"/>

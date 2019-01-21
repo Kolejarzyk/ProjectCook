@@ -31,7 +31,8 @@
     <string name="nutrition_full_name">" <u>Wartości odżywcze</u> "
     </string>
     <string name="drawer_open">Otwórz</string>
-    <string name="drawer_close">Zamknij</string>
+    <string name="drawer_close">Zamknij</string>'
+    <string name="sort">Sortuj</string>
     <string name="allergic_full_name">
         <u>Alergie</u>
     </string>

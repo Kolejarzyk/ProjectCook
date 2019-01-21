@@ -5,17 +5,15 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.RadioButton
 import com.example.kolejarz.Adapter.RecipeAdapter
 import com.example.kolejarz.DAO.AppDatabase
 import com.example.kolejarz.model.Recipe
-import kotlinx.android.synthetic.main.activity_ranking_page.*
-import kotlinx.android.synthetic.main.activity_ranking_page.view.*
+import kotlinx.android.synthetic.main.activity_sort_page.view.*
 
 /**
  * Class responsible for Ranking page's fragment.
  */
-class RankingFragment : Fragment() {
+class SortFragment : Fragment() {
 
     var recipes = AppDatabase.recipeDao.getRecipes()
     /**
@@ -24,7 +22,7 @@ class RankingFragment : Fragment() {
      * and converting them into View objects.
      */
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.activity_ranking_page,null)
+        val view = inflater.inflate(R.layout.activity_sort_page,null)
 
         view.sort_name_button.setOnClickListener {
             recipes = recipes.sortedBy { recipe -> recipe.recipe_name } as MutableList<Recipe>

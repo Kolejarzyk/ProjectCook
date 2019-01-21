@@ -43,7 +43,7 @@ class UserPage : AppCompatActivity()
 
             create_recipe_button_side_panel -> CreateRecipeFragment::class.java
             my_builds_button_side_panel ->  FavouriteRecipeFragment::class.java
-            ranking_button_side_panel -> RankingFragment::class.java
+            ranking_button_side_panel -> SortFragment::class.java
             products_list_button_side_panel -> ProductListFragment::class.java
             else ->{
                 ProductListFragment::class.java
@@ -67,7 +67,7 @@ class UserPage : AppCompatActivity()
     {
         val fragmentTransaction = supportFragmentManager.beginTransaction()
         if (fragment != null) {
-            fragmentTransaction.replace(R.id.fragmentContainer, fragment)
+                fragmentTransaction.replace(R.id.fragmentContainer, fragment)
         }
         fragmentTransaction.commit()
     }

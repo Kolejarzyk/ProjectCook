@@ -1,5 +1,6 @@
 package com.example.kolejarz.cook
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
@@ -14,6 +15,7 @@ import kotlinx.android.synthetic.main.activity_login_page.*
  */
 class LoginPage : AppCompatActivity()
 {
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_page)
@@ -34,12 +36,12 @@ class LoginPage : AppCompatActivity()
             }
             else
             {
-                error_password.text = "Pass is bad"
+                error_password.text = "Password is incorrect"
                 error_password.setTextColor(Color.parseColor("#FF0000"))
             }
         }
         else{
-            error_email.text = "Erro is bad man"
+            error_email.text = "Email is incorrect"
             error_email.setTextColor(Color.parseColor("#FF0000"))
         }
 
@@ -50,10 +52,10 @@ class LoginPage : AppCompatActivity()
     companion object {
         fun isValidEmail(target: CharSequence): Boolean
         {
-            if(TextUtils.isEmpty(target))
-                return false
+            return if(TextUtils.isEmpty(target))
+                false
             else
-                return Patterns.EMAIL_ADDRESS.matcher(target).matches()
+                Patterns.EMAIL_ADDRESS.matcher(target).matches()
 
         }
 
